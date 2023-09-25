@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.layout {
+  max-width: 78.75rem;
+  @apply mx-auto w-11/12;
+}
+
+.home .projects .swiper-button-next,
+.home .projects .swiper-button-prev {
+  @apply absolute bottom-4 !top-auto !flex !h-10 !w-10 items-center justify-center rounded-xl border-2 border-black bg-white !p-4 !text-black;
+}
+
+.home .projects .swiper-button-next:after,
+.home .projects .swiper-button-prev:after {
+  font-size: 18px !important;
+  font-weight: 900 !important;
+}
+
+.home .projects .swiper-button-next {
+  @apply !right-[50%] !translate-x-[102%] lg:!right-16;
+}
+
+.home .projects .swiper-button-prev {
+  @apply !right-[50%] !left-auto !-translate-x-[2%] lg:!right-[4.2rem];
+}
