@@ -26,7 +26,8 @@ export const skills: ServiceType[] = [
   },
   {
     title: 'Data Scientist',
-    description: 'Transforming Data into Insights, Shaping Tomorrow with Analytical Excellence.',
+    description:
+      'Transforming Data into Insights, Shaping Tomorrow with Analytical Excellence.',
     Icon: HiOutlinePresentationChartLine,
   },
   {
@@ -36,17 +37,20 @@ export const skills: ServiceType[] = [
   },
   {
     title: 'Game Developer',
-    description: 'Crafting Virtual Worlds, Entertaining Real Emotions, One Pixel at a Time.',
+    description:
+      'Crafting Virtual Worlds, Entertaining Real Emotions, One Pixel at a Time.',
     Icon: HiOutlineDesktopComputer,
   },
   {
     title: 'Dev Ops & ML Ops',
-    description: 'Seamless DevOps & ML Ops: Orchestrating Innovation from Code to AI.',
+    description:
+      'Seamless DevOps & ML Ops: Orchestrating Innovation from Code to AI.',
     Icon: HiOutlineUserGroup,
   },
   {
     title: 'Soft Skills',
-    description: 'Empowering People, Nurturing Personal and Professional Growth.',
+    description:
+      'Empowering People, Nurturing Personal and Professional Growth.',
     Icon: HiOutlineSparkles,
   },
 ];

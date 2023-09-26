@@ -13,7 +13,7 @@ import UnstyledLink from '@/components/links/UnstyledLink';
 import SEO from '@/components/SEO';
 import Typography from '@/components/Typography';
 import { socials } from '@/contents/footer';
-import { experiences,skills } from '@/contents/landing';
+import { experiences, skills } from '@/contents/landing';
 import Layout from '@/layouts/Layout';
 
 export default function Home() {
@@ -21,7 +21,10 @@ export default function Home() {
     <Layout withNavbar={true} withFooter={true}>
       <SEO title='Home' />
       <main className='w-screen relative overflow-hidden'>
-        <section id='about' className='w-full min-h-screen py-32 flex flex-col justify-center items-center'>
+        <section
+          id='about'
+          className='w-full min-h-screen py-32 flex flex-col justify-center items-center'
+        >
           <div className='w-3/4 flex flex-col gap-8'>
             <NextImage
               src='/images/profile-picture.png'
@@ -37,7 +40,7 @@ export default function Home() {
               weight='semibold'
               className='text-center text-5xl'
             >
-              {"Hi my name is "}
+              {'Hi my name is '}
               <span className='text-primary-500'>Pradipta Arya Daniswara</span>
             </Typography>
             <Typography
@@ -46,16 +49,25 @@ export default function Home() {
               weight='medium'
               className='text-center w-full md:w-3/4 mx-auto text-lg'
             >
-              I am a passionate student with a strong interest in web programming and computer science. 
-              I have four years of experience in web programming and design from maintaining various open-source projects, 
-              and now I am currently learning to be a data scientist.
+              I am a passionate student with a strong interest in web
+              programming and computer science. I have four years of experience
+              in web programming and design from maintaining various open-source
+              projects, and now I am currently learning to be a data scientist.
             </Typography>
-            <ButtonLink href='#contact' variant='primary' size='lg' className='w-fit mx-auto'>
+            <ButtonLink
+              href='#contact'
+              variant='primary'
+              size='lg'
+              className='w-fit mx-auto'
+            >
               Get Started
             </ButtonLink>
           </div>
         </section>
-        <section id='skill' className='mx-auto w-3/4 py-32 flex flex-col gap-12'>
+        <section
+          id='skill'
+          className='mx-auto w-3/4 py-32 flex flex-col gap-12'
+        >
           <div className='flex flex-col gap-6 text-center'>
             <Typography
               variant='h3'
@@ -63,8 +75,7 @@ export default function Home() {
               weight='semibold'
               className='text-3xl'
             >
-              My {' '}
-              <span className='text-primary-500'>Skills</span>
+              My <span className='text-primary-500'>Skills</span>
             </Typography>
             <Typography
               variant='h6'
@@ -72,7 +83,8 @@ export default function Home() {
               weight='medium'
               className='mx-auto w-full md:w-3/5 text-base'
             >
-              Elevating success through specialized knowledge and proven professional mastery.
+              Elevating success through specialized knowledge and proven
+              professional mastery.
             </Typography>
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -81,7 +93,10 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section id='experience' className='mx-auto w-3/4 py-32 flex flex-col gap-12'>
+        <section
+          id='experience'
+          className='mx-auto w-3/4 py-32 flex flex-col gap-12'
+        >
           <div className='flex flex-col gap-6 text-center'>
             <Typography
               variant='h3'
@@ -97,7 +112,8 @@ export default function Home() {
               weight='medium'
               className='mx-auto w-full md:w-3/5 text-base'
             >
-              Crafting success through years of dedication, skill, and proven expertise.
+              Crafting success through years of dedication, skill, and proven
+              expertise.
             </Typography>
           </div>
           <div className='relative home w-full flex flex-row'>
@@ -122,7 +138,6 @@ export default function Home() {
                           {project.title}
                         </Typography>
                         <div className='flex flex-row gap-3 items-center'>
-                          
                           {project.tags.map((tag, index) => (
                             <Button key={index} variant='secondary' size='sm'>
                               {tag}
@@ -133,7 +148,8 @@ export default function Home() {
                       <Typography variant='p' font='montserrat' weight='medium'>
                         {project.description}
                       </Typography>
-                      <ButtonLink href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                      <ButtonLink
+                        href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
                         variant='primary'
                         size='lg'
                         className='w-fit mb-12 lg:mb-0'
@@ -156,7 +172,10 @@ export default function Home() {
             </Swiper>
           </div>
         </section>
-        <section id='contact' className='mx-auto w-3/4 py-32 flex flex-col gap-12'>
+        <section
+          id='contact'
+          className='mx-auto w-3/4 py-32 flex flex-col gap-12'
+        >
           <div className='flex flex-col gap-6 text-center'>
             <Typography
               variant='h3'
@@ -198,7 +217,6 @@ export default function Home() {
                     {social.name}
                   </Typography>
                 </UnstyledLink>
-                
               </div>
             ))}
           </div>

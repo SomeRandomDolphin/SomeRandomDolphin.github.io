@@ -2,12 +2,7 @@ import NextImage from 'next/image';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Typography from '@/components/Typography';
-import {
-  experiences,
-  quickLinks,
-  skills,
-  socials,
-} from '@/contents/footer';
+import { experiences, quickLinks, skills, socials } from '@/contents/footer';
 
 export default function Footer() {
   return (
