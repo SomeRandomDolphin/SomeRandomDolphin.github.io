@@ -6,6 +6,7 @@ const nextConfig = {
 
   reactStrictMode: true,
   swcMinify: true,
+  distDir: 'build',
 
   pageExtensions: ['page.tsx', 'api.ts'],
   images: {
