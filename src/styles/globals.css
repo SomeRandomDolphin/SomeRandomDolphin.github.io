@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .layout {
   max-width: 78.75rem;
   @apply mx-auto w-11/12;
